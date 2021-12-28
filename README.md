@@ -14,7 +14,7 @@ git clone https://github.com/risapav/docker_grub2 && cd docker_grub2
 It is very easy:
 
 ```sh
-docker build -t docker_grub2 .
+docker build -t grub2-sdk .
 ```
 
 or:

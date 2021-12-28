@@ -67,10 +67,10 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
 	zlib1g-dev && \
 	apt-get clean	
 	
-RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
-	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.bash_profile && \
-	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && \
-	brew install gettext && brew link gettext --force 
+#RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+#	echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.bash_profile && \
+#	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && \
+#	brew install gettext && brew link gettext --force 
 #	cd ${GRUB2_PATH}/grub && \
 #	./bootstrap && \
 #	./configure --with-platform=coreboot

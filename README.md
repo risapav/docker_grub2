@@ -28,10 +28,10 @@ docker build https://github.com/risapav/grub2-sdk.git -t grub2-sdk
 Run Docker inside project directory. ST-link dongle should be plugged in USB.
 
 ```sh
-docker run --rm --privileged -d \
-	-it grub2-sdk \
+docker run --rm --privileged \
 	-p 4500:4500 \
 	-v /dev/bus/usb:/dev/bus/usb \
-	-v $PWD:/home/cb/prj \
-	-w /home/cb 
+	-v $PWD:/home/grub2 \
+	-w /home/grub2 \
+	-it grub2-sdk
 ```

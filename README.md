@@ -6,7 +6,7 @@ grub2 payload builder using docker
 
 Make sure git is installed.
 ```sh
-git clone https://github.com/risapav/grub2-sdk && cd grub2-sdk
+git clone https://github.com/risapav/docker_grub2 && cd docker_grub2
 ```
 
 ## Build Docker container
@@ -14,13 +14,13 @@ git clone https://github.com/risapav/grub2-sdk && cd grub2-sdk
 It is very easy:
 
 ```sh
-docker build -t grub2-sdk .
+docker build -t docker_grub2 .
 ```
 
 or:
 
 ```sh
-docker build https://github.com/risapav/grub2-sdk.git -t grub2-sdk
+docker build https://github.com/risapav/docker_grub2.git -t grub2-sdk
 ```
 
 ## Run grub2-sdk environment
